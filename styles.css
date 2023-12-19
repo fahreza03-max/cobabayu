@@ -1,0 +1,462 @@
+/* AWAL IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nova+Square&display=swap');
+/* font-family: 'Nova Square', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Nova+Square&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Kanit:wght@300&family=Nova+Square&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Gasoek One', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gasoek+One&family=Kanit:wght@300&family=Nova+Square&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Bree Serif', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gasoek+One&family=Kanit:wght@300&family=Macondo&family=Nova+Square&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Macondo', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Gasoek+One&family=Kanit:wght@300&family=Macondo&family=Nova+Square&family=Pangolin&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Pangolin', cursive; */
+
+/* AKHIR IMPORT FONT */
+
+/* AWAL NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  /* text-align: center; */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 5;
+  font-family: 'Macondo', cursive;
+}
+/* AKHIR NAVBAR */
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Ubuntu', sans-serif;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(255, 255, 255) 50%, rgb(54, 40, 40) 50%);
+}
+/* Scrollbar */
+
+/* AWAL Tubuh */
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  color: white;
+  
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+section {
+  margin:  0;
+}
+/* AKHIR Tubuh */
+
+.main-container {
+  width: 100vw;
+  
+}
+
+li {
+  list-style: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* AWAL GAMBAR */
+.Gambar {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  z-index: 0;
+  
+}
+
+
+.Gambar img {
+  position: absolute;
+  transition: opacity 2s ease;
+  animation: fade-pop 3s ease;
+}
+/* AKHIR GAMBAR */
+
+/* AWAL HERO */
+.hero-container {
+  text-align: center;
+  height: 100vh;
+  z-index: 5;
+}
+
+.hero-title {
+  font-size: 80px;
+  line-height: 100%;
+  padding-bottom: 11.5px;
+  letter-spacing: 10px;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  
+  font-family: 'Pangolin', cursive;
+}
+
+.hero-desc {
+  font-size: 30px;
+  font-family: 'Kanit', sans-serif;
+  letter-spacing: 0.05vw;
+  -webkit-animation: fade-in-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+
+/* AKHIR HERO */
+
+
+/* AWAL INTRO */
+.intro-container {
+  height: max(1080px, auto);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro-headline-container {
+  height: 40%;
+  text-align: center;
+  width: 1065px;
+}
+
+.intro-subtitle {
+  font-size: 60px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.intro-desc {
+  font-size: 20px;
+  font-family: 'Nova Square', sans-serif
+
+}
+
+
+.intro-img {
+  height: 50%;
+  width: 80%;
+  background-color: rgb(54, 40, 40);
+  margin: 3%;
+  filter: brightness(80%);
+  border: 25px solid rgb(197, 197, 197);
+  border-radius: 5%;
+}
+/* AKHIR INTRO */
+
+
+.section-two {
+  height: auto;
+  width: 100%;
+}
+
+
+
+/* AWAL NEWS */
+.news-container {
+  width: 92%;
+  font-family: 'Nova Square', sans-serif
+
+}
+
+.news-headline {
+  width: 55%;
+  padding-bottom: 30px;
+ 
+
+}
+
+
+.row{
+  filter: brightness(90%);
+}
+
+.card
+
+.card-title{
+  font-size: 28px;
+  font-family: 'Nova Square', sans-serif;
+}
+
+.card-body{
+  background-color: whitesmoke;
+  margin: 10%;
+  padding: 15%;
+  font-family: 'Nova Square', sans-serif;
+  
+
+}
+
+.card-text{
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.news-headline h2 {
+  font-size: 38px;
+  font-weight: normal;
+ font-family: 'Bree Serif', serif; 
+}
+
+
+
+/* AKHIR NEWS */
+
+.card-1{
+  float: left;
+  background-color: transparent;
+  color: whitesmoke;
+  
+}
+
+.card-2{
+  float: right;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+.card-3{
+  float: left;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+.card-4{
+  float: right;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+
+
+/* AWAL NEWS 1 */
+.news1-container {
+  width: 1200px;
+}
+
+.news1-headline {
+  width: 55%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+
+
+.news1-headline h2 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: right;
+  font-family: 'Bree Serif', serif;
+ 
+}
+/* AKHIR NEWS 1 */
+
+
+
+
+
+/* AWAL FOTO MAKANAN */
+div.gallery {
+  border: 5px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Nova Square', sans-serif
+
+}
+
+.desc{
+  font-family: 'Nova Square', sans-serif;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+
+.responsive{
+  padding-top: 15%;
+}
+/* AKHIR FOTO MAKANAN */
+
+
+
+/* AWAL FAKTA UNIK */
+.parallax1{
+  height: 100%;
+  width: 100%;
+  background-image: url(img/parallaximg.jpg);
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  
+}
+
+.parallax h1{
+  font-size: 35px;
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Bree Serif', serif;
+}
+/* AKHIR FAKTA  */
+
+
+/* AWAL KOMODO */
+div.scroll-container {
+  background-color: transparent;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 5%;
+  padding-bottom: 10px;
+  border: 25px solid, whitesmoke;
+  border-radius: 5%;
+
+}
+
+div.scroll-container img {
+  padding: 10px;
+  border: 25px solid, whitesmoke;
+  border-radius: 5%;
+
+  margin: 0;
+
+}
+/* AKHIR KOMODO */
+
+
+/* AWAL TIM */
+.team img{
+  padding-top: 10%;
+  width: 100%;
+
+  border-radius: 30px;
+  border-color: #fff;
+  filter: brightness(60%);
+  
+  border-radius: 5%;
+}
+
+#Gambar-team h1{
+  font-size: 50px;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.team h1{
+  font-family: 'Gasoek One', sans-serif;
+  letter-spacing: 5px;
+}
+
+.member{
+  font-family: 'Gasoek One', sans-serif;
+}
+
+
+.text-body{
+  font-family: 'Macondo', cursive;
+  height: 20%;
+  text-align: center;
+  font-size: 15px;
+  
+  background-size: 10%;
+}
+/* AKHIR TIM */
+
